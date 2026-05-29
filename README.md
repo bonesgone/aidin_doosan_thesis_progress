@@ -34,10 +34,9 @@ assets/
 ├── figures
 ├── images
 └── videos
-    └── teaser.gif
+    └── video_real_pose_wide_xy.gif
 ```
 
 ## Notes
 
 This repository does not include source code, private notes, raw datasets, checkpoints, or calibration files.
-
