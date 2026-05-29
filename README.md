@@ -11,7 +11,7 @@ Public thesis progress on dexterous manipulation with a Doosan arm and Aidin han
 </p>
 
 <p align="center">
-  <em>ACT inference rollout trained from mostly open-loop scripted demonstrations.</em>
+  <em>ACT inference rollout trained from mostly open-loop scripted demonstrations with tactile feedback.</em>
 </p>
 
 ## Current Snapshot
@@ -29,10 +29,10 @@ This repository shares selected public progress from my thesis work on robot man
 
 ## Research Themes
 
-- Learning dexterous pick-and-place behavior from demonstration data.
+- Learning dexterous pick-and-place behavior from demonstration data. Soon having a Manus glove and Vive wrist tracker for teleoperation.
 - Studying when tactile observations provide useful information beyond vision and robot state.
 - Improving generalization across object pose, contact conditions, and task variation.
-- Using simulation as a controlled testbed before broader robot-side data collection.
+- Using simulation as a controlled testbed before real robot data collection.
 
 ## Possible Directions
 
@@ -41,7 +41,6 @@ This repository shares selected public progress from my thesis work on robot man
 - Richer teleoperation data using hand and wrist tracking, especially demonstrations that include contact recovery rather than only nominal open-loop motion.
 - Tactile-history representations that capture contact onset, force changes, and possible slip over time.
 - Teacher-student style training where privileged simulation information helps generate supervision, while the deployed policy uses only available robot observations.
-- Evaluation under wider pose randomization and physical shifts such as friction, mass, and object geometry changes.
 
 ## Media
 
