@@ -27,20 +27,19 @@ Loss curves exist for the saved runs, but exact best validation-loss values are 
 
 This repository shares selected public progress from my thesis work on robot manipulation with a dexterous hand. The private development repository contains the code, datasets, experiment scripts, and implementation notes.
 
-## Research Themes
+## Research Question
 
-- Learning dexterous pick-and-place behavior from demonstration data. Soon having a Manus glove and Vive wrist tracker for teleoperation.
-- Studying when tactile observations provide useful information beyond vision and robot state.
-- Improving generalization across object pose, contact conditions, and task variation.
-- Using simulation as a controlled testbed before real robot data collection.
+Can an ACT-style imitation policy for dexterous manipulation become more robust when tactile sensing is treated as a contact signal rather than just another observation vector?
 
-## Possible Directions
+This project explores tactile-aware action chunking for an arm-hand system: learning from demonstrations, measuring when tactile information matters, and testing whether contact history helps under pose, friction, mass, or grasp-quality shifts.
 
-- Goal-conditioned policies that receive compact object, target, or task-phase information instead of inferring the entire task from pixels alone.
-- Object-centric policy interfaces that separate perception, goal proposal, and low-level action generation.
-- Richer teleoperation data using hand and wrist tracking, especially demonstrations that include contact recovery rather than only nominal open-loop motion.
-- Tactile-history representations that capture contact onset, force changes, and possible slip over time.
-- Teacher-student style training where privileged simulation information helps generate supervision, while the deployed policy uses only available robot observations.
+## Method Direction
+
+- Goal-conditioned ACT, where the policy receives compact object, target, or task-phase information in addition to images and robot state.
+- Object-centric policy structure that separates perception, goal proposal, and low-level action generation.
+- Tactile summaries and tactile-history features that encode contact onset, force changes, active taxels, and possible slip over time.
+- Richer teleoperation demonstrations using hand and wrist tracking, especially trajectories that include contact recovery instead of only nominal open-loop motion.
+- Simulation-to-robot evaluation with controlled shifts in pose, object geometry, friction, and mass.
 
 ## Media
 
