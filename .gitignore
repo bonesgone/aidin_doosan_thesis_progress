@@ -1,0 +1,21 @@
+.DS_Store
+Thumbs.db
+
+__pycache__/
+*.pyc
+
+# Keep this repository public-facing. Do not commit private research artifacts.
+*.ckpt
+*.pt
+*.pth
+*.hdf5
+*.h5
+checkpoints/
+datasets/
+private/
+notes_private/
+
+# Optional local exports before curation.
+scratch/
+tmp/
+
