@@ -11,7 +11,7 @@ Public thesis progress on dexterous manipulation with a Doosan arm and Aidin han
 </p>
 
 <p align="center">
-  <em>Teaser GIF: add a short rollout or system overview clip here.</em>
+  <em>Inference rollout with tactile feedback and ACT</em>
 </p>
 
 ## Overview
