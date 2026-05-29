@@ -2,7 +2,7 @@
 
 # Aidin-Doosan Dexterous Manipulation
 
-Public thesis progress on dexterous manipulation with a Doosan arm and Aidin hand.
+Public thesis progress on dexterous manipulation with a Doosan Arm and Aidin Hand.
 
 </div>
 
