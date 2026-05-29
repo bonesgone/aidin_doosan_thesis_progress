@@ -7,11 +7,11 @@ Public thesis progress on dexterous manipulation with a Doosan arm and Aidin han
 </div>
 
 <p align="center">
-  <img src="assets/images/teaser_placeholder.svg" alt="Aidin-Doosan thesis teaser placeholder" width="85%">
+  <img src="assets/videos/video_real_pose_wide_xy_23.mp4" alt="Aidin-Doosan manipulation rollout" width="85%">
 </p>
 
 <p align="center">
-  <em>Teaser placeholder: replace this with a system photo, rollout frame, or project figure.</em>
+  <em>Teaser GIF: add a short rollout or system overview clip here.</em>
 </p>
 
 ## Overview
@@ -34,6 +34,7 @@ assets/
 ├── figures
 ├── images
 └── videos
+    └── teaser.gif
 ```
 
 ## Notes
