@@ -27,21 +27,21 @@ Loss curves exist for the saved runs, but exact best validation-loss values are 
 
 This repository shares selected public progress from my thesis work on robot manipulation with a dexterous hand. The private development repository contains the code, datasets, experiment scripts, and implementation notes.
 
-## Current Focus
+## Research Themes
 
-- Demonstration collection
-- Imitation learning for manipulation
-- Tactile-aware policy experiments
-- Simulation and robot-side validation
+- Learning dexterous pick-and-place behavior from demonstration data.
+- Studying when tactile observations provide useful information beyond vision and robot state.
+- Improving generalization across object pose, contact conditions, and task variation.
+- Using simulation as a controlled testbed before broader robot-side data collection.
 
-## Next Steps
+## Possible Directions
 
-- Add Manus glove and Vive tracker teleoperation for richer demonstration data.
-- Collect recovery demonstrations where tactile/contact changes the action.
-- Expand pose randomization and add object yaw variation.
-- Move toward goal-conditioned ACT with object/bin/phase information.
-- Compare vision-only, goal-conditioned, tactile-summary, and tactile-history policies.
-- Evaluate under harder shifts such as object pose, friction, mass, and eventually unseen objects.
+- Goal-conditioned policies that receive compact object, target, or task-phase information instead of inferring the entire task from pixels alone.
+- Object-centric policy interfaces that separate perception, goal proposal, and low-level action generation.
+- Richer teleoperation data using hand and wrist tracking, especially demonstrations that include contact recovery rather than only nominal open-loop motion.
+- Tactile-history representations that capture contact onset, force changes, and possible slip over time.
+- Teacher-student style training where privileged simulation information helps generate supervision, while the deployed policy uses only available robot observations.
+- Evaluation under wider pose randomization and physical shifts such as friction, mass, and object geometry changes.
 
 ## Media
 
