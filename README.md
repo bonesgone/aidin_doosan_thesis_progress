@@ -7,7 +7,7 @@ Public thesis progress on dexterous manipulation with a Doosan arm and Aidin han
 </div>
 
 <p align="center">
-  <img src="assets/videos/video_real_pose_wide_xy_23.mp4" alt="Aidin-Doosan manipulation rollout" width="85%">
+  <img src="assets/videos/video_real_pose_wide_xy.gif" alt="Aidin-Doosan manipulation rollout" width="85%">
 </p>
 
 <p align="center">
