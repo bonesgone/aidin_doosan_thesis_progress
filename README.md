@@ -27,6 +27,29 @@ Current best reliable result:
 
 Tactile-summary policies have also been tested, but current ablations do not yet show a clear tactile benefit. Replacing tactile input with mean, zero, or noise gives similar performance in the latest comparison, suggesting that the policy is still relying mainly on vision and robot state.
 
+## Tactile Sensor Layout
+
+The simulated Aidin hand includes a minimal tactile layout for contact-aware manipulation:
+
+- five fingertip tactile grids: `3 x 3` taxels per fingertip
+- one palm tactile grid: `4 x 4` taxels
+- total tactile dimension: `61` taxels
+
+During rollout, tactile readings are summarized per contact region as total force, maximum taxel force, and active taxel count.
+
+Example tactile readings during the demo collection:
+
+```text
+[EE t=0400] tactile
+  baby_tip    sum=  0.822 max=  0.822 active= 1/9
+  index_tip   sum= 27.585 max= 25.131 active= 2/9
+  middle_tip  sum= 28.612 max= 28.612 active= 1/9
+  ring_tip    sum=  0.000 max=  0.000 active= 0/9
+  thumb_tip   sum=  9.288 max=  9.288 active= 1/9
+  palm        sum=  0.000 max=  0.000 active= 0/16
+  ```
+This compact layout is intended to capture first contact, fingertip loading, and possible slip/recovery events without requiring dense full-hand tactile coverage.
+
 ## Research Question
 
 Can tactile sensing improve the robustness of ACT-style imitation policies when contact information is needed for dexterous manipulation?
